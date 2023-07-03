@@ -1,24 +1,27 @@
 #include<stdio.h>
 
-int main(){
+void length(char arr[100]){
 	
-	char str[30],*pt;
-	int i = 0;
+	int *m;
+	int c;
 	
-	printf("Enter values :");
-
-	
-	gets(str);
-	pt = str;
-	
-	while(*pt != '\0'){
-	   i++;
-	   pt++;
-
+	for(c=0;arr[c]!='\0';c++){
+		m=&c;
 	}
 	
-	printf("Length of string :%d",i);
+	printf("Length of string : %d",*m);
 	
 	
-	return 0;
+}
+int main (){
+	
+	int i;
+	char arr[100];
+	  
+	   printf("Enter Element :");
+	   gets(arr);
+	   
+	length(arr);   
+	 
+	 return 0;
 }
